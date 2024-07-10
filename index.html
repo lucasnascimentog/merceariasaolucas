@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="shortcut icon" href="img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Mercearia São Lucas - variedade em produtos baratos e entrega rápida</title>
 </head>
 <body>
-    
+
+  <header>
+
+    <nav class="nav-superior">
+      <!--LOGO-->
+      <a class="nav-box-logo" href="#">
+        <img class="nav-logo" src="img/logo.svg" alt="Mercearia São Lucas">
+      </a>
+      <!--BARRA DE PESQUISA-->
+      <div class="nav-box-pesquisa">
+        <input type="text" class="barra-pesquisa" placeholder="Pesquisar produtos...">
+        <button class="nav-pesquisa-btn">
+          <svg viewBox="0 0 24 24" fill="none" width="20px" xmlns="http://www.w3.org/2000/svg" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#002F52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </button>
+      </div>
+      <!-- CAIXA DELIVERY e USUARIO/CARRINHO-->
+      <div class="nav-box-icones">
+        <!--DELIVERY-->
+        <a href="#" class="nav-delivery">
+          <p>Peça pelo nosso</p>
+          <svg class="nav-delivery-icone" viewBox="0 0 48.00 48.00" xmlns="http://www.w3.org/2000/svg" fill="#fff" stroke-width="0.00048000000000000007"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="3rem" height="3rem" fill="none"></rect> </g> <g id="Health_Icons" data-name="Health Icons"> <g> <path d="M37.7,11.1A3,3,0,0,0,35.4,10H34.2l.3-1.7A3.1,3.1,0,0,0,33.9,6a3.2,3.2,0,0,0-2.2-1H7.8a2,2,0,0,0,0,4H30.3l-4,22.9a6.8,6.8,0,0,0-1,2.1H20.7A7,7,0,0,0,7.3,34H6.2l.5-2.9a2,2,0,0,0-1.6-2.3,2,2,0,0,0-2.3,1.6L2,34.7A2.8,2.8,0,0,0,2.7,37a2.8,2.8,0,0,0,2.1,1H7.3a7,7,0,0,0,13.4,0h4.6a7,7,0,0,0,13.4,0h2a3.2,3.2,0,0,0,3.1-2.7L46,22.5ZM14,39a3,3,0,0,1-3-3,3,3,0,0,1,6,0A3,3,0,0,1,14,39ZM33.5,14h1.3l5.9,8H32.1ZM32,39a3,3,0,0,1-3-3,3,3,0,0,1,6,0A3,3,0,0,1,32,39Zm8-5H38.7A7,7,0,0,0,32,29H30.9l.5-3.1h9.9Z"></path> <path d="M4,15H14a2,2,0,0,0,0-4H4a2,2,0,0,0,0,4Z"></path> <path d="M15,19a2,2,0,0,0-2-2H5a2,2,0,0,0,0,4h8A2,2,0,0,0,15,19Z"></path> <path d="M6,23a2,2,0,0,0,0,4h6a2,2,0,0,0,0-4Z"></path> </g> </g> </g> </g></svg>
+          <p>delivery</p>
+        </a>
+      </div>
+      <!--USUARIO-CARRINHO-->
+      <div class="nav-box-usuariocarrinho">
+          <!--USUARIO-->
+          <a class="nav-box-icone nav-box-usuario link" href="#">
+            <svg class="nav-icone nav-icone-usuario" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+              <g id="SVGRepo_iconCarrier"> <circle cx="12" cy="9" r="3" stroke="#ffffff" stroke-width="1.5"/> <circle cx="12" cy="12" r="10" stroke="#ffffff" stroke-width="1.5"/> <path d="M17.9691 20C17.81 17.1085 16.9247 15 11.9999 15C7.07521 15 6.18991 17.1085 6.03076 20" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/> </g>
+            </svg>
+            <p class="nav-box-usuario-desc"><span>Entre</span> ou <br>
+              <span>cadastre-se</span></p>
+          </a>
+          <!--CARRINHO-->
+          <a class="nav-box-icone nav-box-carrinho nav-link" href="#" data-count="0">
+            <img class="nav-icone nav-icone-carrinho" src="img/carrinho.svg" alt="meu carrinho">
+          </a>
+        </div>
+      </div>
+    </nav>
+
+
+    <nav class="nav-inferior">
+      <a class="nav-inferior-link" href="#">Todas as categorias</a>
+      <a class="nav-inferior-link categoria-produtos" href="#">Bebidas</a>
+      <a class="nav-inferior-link categoria-produtos" href="#">Alimentação</a>
+      <a class="nav-inferior-link categoria-produtos" href="#">Perfumaria</a>
+      <a class="nav-inferior-link categoria-produtos" href="#">Linha infantil</a>
+      <a class="nav-inferior-link" href="#">OFERTAS DO DIA</a>
+    </nav>
+
+  </header>
+
+  <main>
+    <section>
+      <div class="banner">
+        banner.png
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
 </body>
 </html>

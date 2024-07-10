@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+:root {
+    --laranja: #FAB344;
+    --azul: #005dae;
+    --azul-degrade: linear-gradient(97.54deg, #002F52, #326589 165.37%);
+    --fonte-principal: "Cabin Condensed", sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*NAV SUPERIOR*/
+
+.nav-superior {
+    background: var(--azul-degrade);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+.link {
+    color: white;
+}
+
+/*LOGO*/
+
+.nav-logo {
+    height: 4rem;
+}
+
+/*BARRA DE PESQUISA*/
+
+.nav-box-pesquisa {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    border: none;
+}
+.barra-pesquisa {
+    width: 90%;
+    color: black;
+    padding: 0.6rem;
+    font-size: 16px;
+    border-radius: 8px 0 0 8px;
+}
+.nav-pesquisa-btn {
+    width: 10%;
+    background-color: var(--laranja);
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+.nav-pesquisa-btn:active {
+    background-color: #c68b2d;
+}
+
+/*DELIVERY*/
+
+.nav-delivery {
+    display: flex;
+    border: 4px #00365f double;
+    border-radius: 10px;
+    padding: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 120px;
+    justify-content: center;
+}
+.nav-delivery-icone {
+    width: 1.3rem;
+    margin: 0.4rem 0.3rem 0 0;
+}
+.nav-delivery > p {
+    color: white;
+}
+
+/*USUARIO-CARRINHO*/
+
+.nav-box-usuariocarrinho {
+    display: flex;
+}
+
+.nav-icone {
+    height: 2.5rem;
+}
+
+.nav-box-usuario {
+    width: 7.5rem;
+    display: flex;
+    margin-right: 5rem;
+}
+.nav-icone-usuario {
+    margin-right: 0.5rem;
+}
+.nav-box-carrinho{
+    position: relative;
+}
+
+.nav-box-carrinho::before {
+    position: absolute;
+    content: attr(data-count);
+    top: -0.75rem;
+    right: -0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--laranja);
+    color: #00365f;
+    border-radius: 50%;
+}
+
+/*NAV INFERIOR*/
+
+.nav-inferior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--laranja);
+    color: #002F52;
+    font-size: 17px;
+    padding: 0.4rem;
+}
+
+.nav-inferior-link {
+    font-weight: 900;
+    color: #002F52;
+    padding: 0.4rem 1rem;
+}
+.nav-inferior-link:hover {
+    background-color: #fed492;
+    border-radius: 30px;
+    transition: 250ms;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 950px) {
+    .nav-superior {
+        padding: 0.5rem 1rem;
+    }
+    .nav-delivery {
+        display: none;
+    }
+
+    .nav-inferior-link:hover {
+        border-radius: 0px;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    /*NAV SUPERIOR*/
+    .nav-superior {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-logo {
+        height: 3rem;
+        margin-right: 0.5rem;
+    }
+
+    .nav-box-pesquisa {
+        width: 40vw;
+    }
+    .nav-pesquisa-btn {
+        width: 2rem;
+    }
+    
+    .nav-box-usuario-desc {
+        display: none;
+    }
+    .nav-icone {
+        height: 1.8rem;
+    }
+    .nav-box-usuariocarrinho {
+        justify-content: flex-end;
+    }
+    .nav-box-usuario {
+        margin-right: 0;
+        width: 3.5rem;
+    }
+
+    /*NAV INFERIOR*/
+    .nav-inferior {
+        font-size: 16px;
+        padding: 0rem;
+    }
+    .nav-inferior-link {
+        padding: 0.4rem 0.6rem;
+    }
+    .categoria-produtos {
+        display: none;
+    }
+
+    .nav-box-carrinho::before {
+        top: -0.5rem;
+        right: -0.5rem;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .nav-superior {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .nav-icone {
+        height: 1.5rem;
+    }
+
+    .nav-box-usuario {
+        margin-left: 0.5rem;
+        width: 2rem;
+    }
+
+    .nav-inferior-link {
+        padding: 0.25rem 0.6rem;
+    }
+}
