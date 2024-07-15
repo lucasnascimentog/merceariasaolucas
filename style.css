@@ -19,7 +19,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background-color: #cacaca;
+    background-color: #cacaca   ;
 }
 
 /*NAV SUPERIOR*/
@@ -181,42 +181,78 @@ body {
 
 /*LISTA DE PRODUTOS*/
 
+.pagina-produtos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .principal-produtos {
+    user-select: none;
     background: white;
     height: max-content;
-    width: 230px;
+    width: 180px;
     border-radius: 15px;
     padding: .8rem .5rem;
-    margin: 5rem 2rem;
+    margin: 2rem 1rem;
     border:2px solid rgba(0, 29, 55, 0.353);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.12);
 }
+.card-produto {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+.card-link {
+    color: #001d37;
+}
 .principal-produtos:hover {
     transition: 250ms;
-    background: #d2ad3fd0;
+    background: #a4adb3;
 }
-.categoria-card-produto {
-    color: #002F52;
-    font-size: 14px;
-    margin-left: 1.6rem;
+.card-box-imagem {
+    text-align: center;
+}
+.imagem-card-produto {
+    width: 120px;
 }
 .titulo-card-produto {
+    user-select: auto;
     color: #001d37;
-    font-size: 20px;
+    font-size: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
-.imagem-card-produto {
-    width: 200px;
-}
 .valor-card-produto {
+    margin-top: 1rem;
     font-size: 22px;
     font-weight: bold;
     color: var(--azul-degrade);
+}
+
+.add-card-produto {
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--laranja);
+    transition: 250ms;
+}
+.add-card-produto:hover {
+    background-color: #bb7b14;
+    color: #fff;
+}
+.add-card-produto:active {
+    background-color: #815308;
 }
 
 /*MEDIA QUERIES*/
