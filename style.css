@@ -141,12 +141,12 @@ background: var(--cinza-bg);
 .banner {
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
+    margin: 0.4rem 0;
 }
 .banner-box {
     position: relative;
-    width: 75%;
-    height: 65vh;
+    width: 90%;
+    padding-top: calc(90% * (1 / 4));
     background: var(--azul-escuro);
     display: flex;
     align-items: center;
@@ -161,24 +161,30 @@ background: var(--cinza-bg);
     width: 100%;
     height: 100%;
     background-image: url('img/banner-pc.svg');
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 1;
 }
 .banner-btn {
+    border-radius: 50%;
     cursor: pointer;
     color: var(--branco);
     font-weight: bold;
-    font-size: 36px;
+    font-size: 28px;
     user-select: none;
     background-color:var(--azul);
     display: flex;
     justify-content: center;
-    height: 3rem;
-    width: 3rem;
+    align-items: center;
     z-index: 2;
     margin: 0 1rem;
+    width: 4%;
+    height: 15%;
+    position: absolute;
+    top: 45%;
+}
+.banner-btn:last-child {
+    right: 0;
 }
 .banner-btn:hover {
     background-color: var(--laranja);
@@ -189,16 +195,6 @@ background: var(--cinza-bg);
 }
 
 /*LISTA DE PRODUTOS*/
-.pagina-produtos {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 8px;
-    padding: 0 2rem;
-    overflow-x: auto;
-    align-items: center;
-    background: #dedede;
-}
-
 .pagina-produtos-titulo {
     position: relative;
     color: var(--azul-escuro);
@@ -219,6 +215,16 @@ background: var(--cinza-bg);
     z-index: -1;
 }
 
+
+.pagina-produtos {
+    display: flex;
+    padding: 0 2rem;
+    overflow-x: scroll;
+    align-items: center;
+    background: #dedede;
+}
+
+
 .card-produto {
     cursor: pointer;
     user-select: none;
@@ -231,12 +237,10 @@ background: var(--cinza-bg);
     margin: 2rem 1rem;
     border:2px solid rgba(0, 29, 55, 0.353);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
 }
 .card-produto:hover {
     transition: 250ms;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.268);
-    transform: translateY(-5px);
 }
 .card-link {
     color: var(--azul-escuro);
@@ -252,11 +256,12 @@ background: var(--cinza-bg);
     color: var(--azul-escuro);
     font-size: 16px;
     overflow: hidden;
-    text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    min-height: calc(2 * 1.2em);
 }
+
 .valor-card-produto {
     margin-top: 1rem;
     font-size: 22px;
@@ -373,6 +378,7 @@ background: var(--cinza-bg);
 
     .banner-box {
         width: 100%;
+        height: 50vh;
     }
     .banner-btn {
         display: none;
