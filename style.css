@@ -236,7 +236,7 @@ body {
     cursor: pointer;
     user-select: none;
     background: var(--branco);
-    height: 322px;
+    height: 300px;
     width: 15%;
     min-width: 200px;
     border-radius: 15px;
@@ -257,7 +257,7 @@ body {
     text-align: center;
 }
 .imagem-card-produto {
-    width: 120px;
+    width: 110px;
 }
 .titulo-card-produto {
     user-select: auto;
@@ -265,13 +265,12 @@ body {
     font-size: 16px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    min-height: calc(2 * 1.2em);
+    height: calc(2 * 1.2em);
 }
 
 .valor-anterior-produto {
-    margin-top: 1rem;
     text-decoration: line-through;
     font-size: 18px;
 }
@@ -282,7 +281,6 @@ body {
 }
 
 .add-card-produto {
-    margin-top: 1rem;
     border-radius: 8px;
     width: 90%;
     height: 30px;
@@ -300,11 +298,11 @@ body {
     transform: translateX(-50%);
 }
 .add-card-produto:hover {
-    background-color: var(--laranja-escuro);
+    background-color: var(--laranja);
     color: var(--branco);
 }
 .add-card-produto:active {
-    background-color: var(--laranja);
+    background-color: var(--laranja-escuro);
 }
 
 .pagina-produtos-continuacao {
@@ -323,6 +321,29 @@ body {
     background: var(--azul-degrade);
     color: var(--branco);
     padding: 2rem 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rodape-logo {
+    width: 150px;
+    margin-bottom: 1rem;
+}
+.rodape-link {
+    margin: 0.5rem;
+}
+.rodape-googleplay {
+    width: 120px;
+}
+.rodape-appstore {
+    width: 108px;
+}
+.rodape-linkedin {
+    transform: translateY(3px);
+}
+.rodape-hipercard {
+    transform: translateY(7px);
 }
 
 
