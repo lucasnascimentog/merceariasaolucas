@@ -358,6 +358,8 @@ header {
     width: 108px;
 }
 
+
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 950px) {
@@ -470,6 +472,7 @@ header {
     .pagina-produtos-titulo {
         margin: 3rem 0 1rem 0;
         font-size: 20px;
+        text-wrap: wrap;
     }
 
     .pagina-produtos-titulo>span {
@@ -495,12 +498,6 @@ header {
 
     .redes-sociais-box {
         display: block;
-    }
-
-    .rodape-titulo,
-    .rodape-formas-pagamento-bandeira,
-    .rodape-redes-sociais {
-        display: none;
     }
 }
 
