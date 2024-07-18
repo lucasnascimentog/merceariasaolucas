@@ -28,6 +28,13 @@ body {
     height: 100%;
 }
 
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    top: 0;
+}
+
 /*NAV SUPERIOR*/
 
 .nav-superior {
@@ -141,7 +148,7 @@ body {
 .banner {
     display: flex;
     justify-content: center;
-    margin: 0.4rem 0;
+    margin-top: 10rem;
 }
 .banner-box {
     position: relative;
@@ -322,16 +329,27 @@ body {
     color: var(--branco);
     padding: 2rem 4rem;
     text-align: center;
+    justify-content:space-around;
     display: flex;
+    align-items: flex-start;
+}
+.rodape-contato{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+}
+.rodape-titulo {
+    margin: 0.7rem 0;
 }
 .rodape-logo {
-    width: 150px;
+    width: 40%;
     margin-bottom: 1rem;
 }
 .rodape-link {
     margin: 0.5rem;
+}
+.rodape-telefone {
+    display: flex;
 }
 .rodape-googleplay {
     width: 120px;
@@ -357,6 +375,20 @@ body {
         width: 1.2rem;
         height: 1.2rem;
         font-size: 14px;
+    }
+
+    .banner {
+        margin-top: 9rem;
+    }
+
+    .rodape-titulo {
+        font-size: 16px;
+    }
+    .rodape-link {
+        font-size: 14px;
+    }
+    .rodape-titulo>span {
+        display: none;
     }
 }
 
@@ -418,6 +450,10 @@ body {
     }
 
     /*BANNER*/
+    .banner {
+        margin-top: 6rem;
+    }
+
     .banner-box {
         margin-top: 1rem;
         width: 100%;
@@ -443,7 +479,29 @@ body {
     .card-produto {
         margin: 1rem;
     }
+
+    /*RODAPE*/
     
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        align-items: center;
+    }
+    
+    .rodape-logo {
+        width: 30vw;
+    }
+
+    .redes-sociais-box {
+        display: block;
+    }
+
+    .rodape-titulo,
+    .rodape-formas-pagamento-bandeira,
+    .rodape-redes-sociais {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -464,6 +522,10 @@ body {
         padding: 0.25rem 0.6rem;
     }
 
+    .banner {
+        margin-top: 4.7rem;
+    }
+
     /*PAGINA PRODUTOS*/
     .pagina-produtos-titulo {
         margin: 3rem 0 1rem 0;
@@ -472,5 +534,12 @@ body {
 
     .pagina-produtos-titulo>span {
         font-size: 18px;
+    }
+
+
+    /*RODAPE*/
+
+    .rodape-logo {
+        width: 40vw;
     }
 }
