@@ -205,6 +205,36 @@ header {
     background-color: var(--laranja-escuro);
 }
 
+
+/*CATEGORIAS*/
+
+.principal-categorias {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 1rem 0;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    gap: 5px;
+    justify-content: space-around;
+    
+}
+.categoria-card {
+    background-color: #fff;
+    flex: 1 1 200px;
+    aspect-ratio: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+
 /*LISTA DE PRODUTOS*/
 .pagina-produtos-titulo {
     position: relative;
@@ -379,6 +409,10 @@ header {
         font-size: 14px;
     }
 
+    .categoria-card-5 {
+        display: none;
+    }
+
     .banner {
         margin-top: 9rem;
     }
@@ -393,6 +427,7 @@ header {
         display: none;
     }
 }
+
 
 
 @media screen and (max-width: 740px) {
@@ -451,6 +486,12 @@ header {
         text-align: center;
     }
 
+    /*CATEGORIAS*/
+
+    .categoria-card {
+        aspect-ratio: 3/4;
+    }
+
     /*BANNER*/
     .banner {
         margin-top: 6rem;
@@ -500,6 +541,16 @@ header {
         display: block;
     }
 }
+
+
+
+@media screen and (max-width: 540px) {
+    .categoria-card-4 {
+        display: none;
+    }
+}
+
+
 
 @media screen and (max-width: 350px) {
     .nav-superior {
