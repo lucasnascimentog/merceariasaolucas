@@ -233,6 +233,13 @@ header {
     transition: all 0.3s ease;
 }
 
+.categoria-card-1 {
+    background-image: url('img/categoria-bebidas.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 
 /*LISTA DE PRODUTOS*/
@@ -350,7 +357,6 @@ header {
     background: var(--laranja);
     padding: 0.4rem 0.6rem;
     font-weight: 900;
-    
 }
 
 /*RODAPE*/
